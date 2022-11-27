@@ -18,3 +18,7 @@ sh build.sh
 ./blas_mec 32 24 24 96 5 5 256 100 32
 ./blas_mec 32 24 24 96 5 5 256 100 64
 ```
+
+## Reference
+* https://arxiv.org/pdf/1706.06873v1.pdf
+* https://github.com/BBuf/Memory-efficient-Convolution-for-Deep-Neural-Network
