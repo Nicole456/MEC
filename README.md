@@ -5,7 +5,7 @@
 git clone https://github.com/leigao97/MEC.git
 git submodule update --init --recursive
 mkdir build_x86 && mkdir build_arm
-sh build.sh
+sh build.sh  ## change android ndk path at line 6 before running it
 ```
 ## Usage
 ```
