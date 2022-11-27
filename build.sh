@@ -1,18 +1,10 @@
-# g++ blas_conv.cpp -I./eigen /usr/lib/x86_64-linux-gnu/libcblas.so.3 -o blas_conv
-# g++ blas_mec.cpp -I./eigen /usr/lib/x86_64-linux-gnu/libcblas.so.3 -fopenmp -o blas_conv
-
-
-# ./blas_conv 32 24 24 96 5 5 256
-# ./blas_mec 32 24 24 96 5 5 256 100 1
-# ./blas_mec 32 24 24 96 5 5 256 100 2
-# ./blas_mec 32 24 24 96 5 5 256 100 4
-# ./blas_mec 32 24 24 96 5 5 256 100 8
-# ./blas_mec 32 24 24 96 5 5 256 100 16
-# ./blas_mec 32 24 24 96 5 5 256 100 32
-# ./blas_mec 32 24 24 96 5 5 256 100 64
+cd build_x86
+cmake .. \
+      -DBUILD_X86=True || exit 1;
+make -j16 || exit 1;
 
 ANDROID_NDK=/home/lei/Tool/android-ndk-r25b
-cd build
+cd build_arm
 cmake ..  \
       -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake \
       -DCMAKE_BUILD_TYPE=Release \
