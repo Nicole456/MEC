@@ -1,0 +1,1 @@
+/usr/bin/c++   -fopenmp -O3 -DNDEBUG   CMakeFiles/blas_conv.dir/blas_conv.cpp.o  -o blas_conv  -Wl,-rpath,/home/lei/Project/MEC/lib ../lib/libcblas_x86.so 
