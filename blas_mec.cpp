@@ -60,8 +60,8 @@ int main(int argc, char **argv) {
 
   int output_size = IN * OH * OW * KC;
   int im2col_size = IN * OW * IH * KW * IC;
-  std::cout << "output size " << output_size << std::endl;
-  std::cout << "lower size " << im2col_size << std::endl;
+  // std::cout << "output size " << output_size << std::endl;
+  // std::cout << "lower size " << im2col_size << std::endl;
 
   float *im2col = (float *)malloc(sizeof(float) * im2col_size);
 
@@ -194,13 +194,13 @@ int main(int argc, char **argv) {
   time = (stop.tv_sec - start.tv_sec) +
          (double)(stop.tv_nsec - start.tv_nsec) / 1e9;
 
-  std::cout << "Execution time = " << time << std::endl;
+  // std::cout << "Execution time = " << time << std::endl;
 
   double vm, rss;
   mem_usage(vm, rss);
-  std::cout << "Virtual Memory: " << vm << " Resident set size: " << rss
-            << std::endl;
-
+  // std::cout << "Virtual Memory: " << vm << " Resident set size: " << rss
+  //           << std::endl;
+  std::cout << time << " " << rss << std::endl;
   // for (int b = 0; b < IN; ++b) {
   //   for (int od = 0; od < KC; ++od) {
   //     for (int i = 0; i < OH; ++i) {
