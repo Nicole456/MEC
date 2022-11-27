@@ -1,1 +1,0 @@
-/usr/bin/c++   -static-openmp -fopenmp   CMakeFiles/blas_mec.dir/blas_mec.cpp.o  -o blas_mec  -Wl,-rpath,/home/lei/Project/MEC/lib ../lib/libcblas_arm.so 

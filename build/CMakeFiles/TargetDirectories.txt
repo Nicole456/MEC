@@ -1,4 +1,0 @@
-/home/lei/Project/MEC/build/CMakeFiles/rebuild_cache.dir
-/home/lei/Project/MEC/build/CMakeFiles/edit_cache.dir
-/home/lei/Project/MEC/build/CMakeFiles/blas_conv.dir
-/home/lei/Project/MEC/build/CMakeFiles/blas_mec.dir
