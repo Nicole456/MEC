@@ -2,6 +2,7 @@ cd build_x86
 cmake .. \
       -DBUILD_X86=True || exit 1;
 make -j16 || exit 1;
+cd ..
 
 ANDROID_NDK=/home/lei/Tool/android-ndk-r25b
 cd build_arm
