@@ -3,6 +3,7 @@
 ## Compile
 ```
 git clone https://github.com/leigao97/MEC.git
+cd MEC
 git submodule update --init --recursive
 mkdir build_x86 && mkdir build_arm
 sh build.sh  ## change android ndk path at line 6 before running it
